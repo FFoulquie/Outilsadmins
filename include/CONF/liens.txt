@@ -1,0 +1,8 @@
+[CD47]
+Chronotime|https://chronotime.lotetgaronne.fr/chronotime/login/login.html
+En Direct|https://endirect.lotetgaronne.fr/jcms/j_6/fr/accueil
+
+[Internet]
+Google|https://www.google.fr/
+Autocad|https://manage.autodesk.com/user-access/users/user-list
+Adobe|https://adminconsole.adobe.com/
