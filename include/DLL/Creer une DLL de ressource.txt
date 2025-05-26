@@ -1,0 +1,98 @@
+Pour créer une dll qui contiendra des ressources, il vous faudra quelques pré-requis.
+Ces derniers peuvent être récupérer dans le pack MASM32 (http://masm32.online.fr/masm32.htm).
+
+Voici les 5 programmes qui vous permettrons de créer vos dll de ressources :
+- RC.exe (Microsoft Resource Compiler)
+- RCdll.dll (Microsoft Windows Resource Compiler DLL)
+- Link.exe (Microsoft (R) Incremental Linker)
+- cvtres.exe (Resource File To COFF Object Conversion Utility)
+- mspdb50.dll (Microsoft (R) Program Database)
+
+Ensuite, il faut créer le fichier de ressource (Fichier qui liste les ressources à intégrer dans la dll).
+Dans un premier temps, ajouter les lignes comme ceci :
+
+NomDeLaRessource	TypeDeLaRessource	"Nom Du Fichier"
+
+Séparer les nom par une tabulation, éviter les espaces dans le nom de la ressource.
+
+Voici les principaux type de ressource utilisées :
+	CURSOR			(Fichiers curseur)
+	ICON			(Fichiers icône)
+	BITMAP			(Fichiers image bitmap)
+	WAVE			(Fichiers son wave)
+	AVI			(Fichiers video avi)
+	RCDATA			(Fichiers divers)
+
+Mais il en existe d'autres :
+	ACCELERATOR
+	ANICURSOR
+	ANIICON
+	DIALOG
+	DLGINCLUDE
+	FONT
+	FONTDIR
+	GROUP_CURSOR
+	GROUP_ICON
+	HTML
+	RT_HTML DISCARDABLE
+	MANIFEST
+	MENU
+	MESSAGETABLE
+	PLUGPLAY
+	STRING
+	VERSION
+	VXD
+
+Cela devrait donner un fichier ressource similaire à ceci (Nous l'appellerons MaDll.rc)  :
+
+POINTER		CURSOR	example.cur
+ACCESS		ICON	example.ico
+TOOLBAR		BITMAP	example.bmp
+WHISTLE		WAVE	example.wav
+
+Il est bien, dans certains cas, de rajouter quelques informations personnelle à votre dll.
+Il est tout à fait possible de rajouter, un N° de version, un commentaire, un auteur ....
+Pour ce faire, rajouter et modifier en conséquence le texte suivant à la suite des ressources,
+dans le fichier MaDll.rc :
+
+1 VERSIONINFO
+FILEVERSION 0,0,0,1
+PRODUCTVERSION 0,0,0,1
+FILEOS 0x40004
+FILETYPE 0x2
+{
+BLOCK "StringFileInfo"
+{
+	BLOCK "040C04B0"
+	{
+		VALUE "CompanyName", "Ma Compagnie"
+		VALUE "FileDescription", "Description du fichier"
+		VALUE "FileVersion", "0,0,0,1"
+		VALUE "InternalName", "Nom Interne du fichier"
+		VALUE "LegalCopyright", "Copyright (C) 2007-2008"
+		VALUE "OriginalFilename", "MaDll.dll"
+		VALUE "ProductName", "Nom du Produit"
+		VALUE "ProductVersion", "0,0,0,1"
+		VALUE "Comments", ""
+	}
+}
+
+BLOCK "VarFileInfo"
+{
+	VALUE "Translation", 0x040C 0x04B0
+}
+}
+
+Voilà, il ne nous reste plus qu'à créer notre dll.
+Placer bien le fichier MaDll.rc et les ressources que vous voulez ajouter
+dans le même répertoire, et lancer les commandes suivantes :
+
+RC.exe /r MaDll.rc
+Link.exe /nodefaultlib /dll /machine:ix86 /noentry /out:MaDll.dll MaDll.res
+
+Et voilà, votre dll est prête à être utilisée avec votre logiciel préférer.
+
+
+Salutation.
+Thierry
+

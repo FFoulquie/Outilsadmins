@@ -1,0 +1,470 @@
+Suivi des mises à jours Outils Admins
+@F.FOULQUIE
+
+
+*********
+V 4.0.0.9
+*********
+26/05/2025
+
+	- Ajout du bouton UserLoggin
+
+*********
+V 4.0.0.8
+*********
+15/05/2025
+
+	- Correction fautes d'orthographes
+
+*********
+V 4.0.0.7
+*********
+13/05/2025
+
+	- Ajout du bouton diag téléphonie
+
+
+*********
+V 4.0.0.6
+*********
+18/04/2025
+
+	- Réorganisation de l'onglet gestion Admins pour une meilleure lisibilité
+	- Ajout de la documentation pour la modification des fichiers de conf	
+
+*********
+V 4.0.0.5
+*********
+24/03/2025
+
+	- Ajout de la fonction _CheckAndUpdateComponent pour lancer les sous-applicatifs et gérer les mises à jours
+	- Modification de la fonction VerifierLiencase pour l'ouverture des fichiers xlsx et docx.
+	- Correction de l'affichage de l'heure
+
+*********
+V 4.0.0.4
+*********
+12/02/2025
+	
+	- Ajout des PC des admins dans la liste des ordinateurs ne supprimant pas les scripts.
+	- Optimisation de certaines fonctions pour faciliter la réutilisation
+	- Ajout d'un menu personnel modifiable par un fichier texte.
+
+*********
+V 4.0.0.3
+*********
+12/02/2025
+	
+	- Modification du fichier de controle des sauvegardes pour passer sur un fichier créé à chaque ouverture de session sous 
+	  %username%\documents\docapplis\controlesav.log	
+
+
+*********
+V 4.0.0.2
+*********
+11/02/2025
+	
+	- Modification de la commande WolCmd pour pouvoir être exécutée sur un site distant
+
+
+*********
+V 4.0.0.1
+*********
+29/01/2025
+	
+	- Appel des fonctions depuis des fichiers séparés pour faciliter la maintenance
+	- Ajout de la fonction _FileCopy pour avoir un suivi des copies de fichiers
+	- Ajout de la date et l'heure
+
+*********
+V 3.2.0.7
+*********
+22/01/2025
+
+	- Correction d'une erreur pour le contrôle des sauvegardes
+
+*********
+V 3.2.0.6
+*********
+2/12/2024
+
+	- ajour d'une variable contenant le port de connexion pour les NAS
+
+*********
+V 3.2.0.5
+*********
+21/11/2024
+
+	- Mise à jour de la documentation autoUpdate
+	- Modification du SMTP pour l'envoi de mail
+
+*********
+V 3.2.0.4
+*********
+06/11/2024
+
+	- Ajout du bouton permettant de lister les PC par version d'OS
+
+*********
+V 3.2.0.3
+*********
+17/09/2024
+
+	- Modifcation de l'icone quitter
+	- Ajout du NAS COM-SAV
+	- Ajout du menu permettant de voir le fichier de configuration
+
+*********
+V 3.2.0.2
+*********
+30/08/2024
+
+	- Ajout des raccourcis claviers F10 pour le partage administratif et F11 pour la date de connexion AD des PC
+	- Mise à jour de la documentation raccourci clavier
+
+*********
+V 3.2.0.1
+*********
+29/08/2024
+
+	- Correction d'une erreur lors du controle des sauvegardes St Jacques
+
+*********
+V 3.2.0.0
+*********
+01/08/2024
+
+	- Ajout d'un onglet gestion du matériel
+	- Déplacement des boutons recherche PC et recherche écrans dans l'onglet Gesion matériel
+	- Ajout d'un bouton Création liste écrans connectés sur l'onglet gestion Matériel. Ce bouton récupère les N° de séries des écrans connectés à 
+		des ordinateurs allumés et alimente la base de données permettant la recherche des écrans
+
+*********
+V 3.1.0.5
+*********
+01/08/2024
+
+	- Ajout d'un fichier de configuration pour BitLocker
+
+*********
+V 3.1.0.3
+*********
+05/07/2024
+
+	- Modification de la documentation Gestion Utilisateur suite à la réorganisation de l'application et l'ajout du bouton de changement de mot de passe
+
+*********
+V 3.1.0.2
+*********
+05/07/2024
+
+	- Déplacement du controle de connectivité du PC dans l'application "Controle Bitlocker" afin de pouvoir controler la clé d'un poste non joignable
+
+*********
+V 3.1.0.1
+*********
+05/07/2024
+
+	- Ajout du NAS 000-COM
+	- Mise à jour de la documentation  de controle Bitlocker
+
+
+*********
+V 3.1.0.0
+*********
+21/06/2024
+
+	- Ajout du bouton de controle Bitlocker
+	- Ajout de la documentation de controle Bitlocker
+
+*********
+V 3.0.0.18
+*********
+18/06/2024
+
+	- Correction de l'anomalie de recherche des numéros de série écran
+
+*********
+V 3.0.0.16
+*********
+30/05/2024
+
+	- Mise en place de raccourcis clavier
+	- Ajout de la documentation reprenant les raccourcis claviers
+
+*********
+V 3.0.0.15
+*********
+23/05/2024
+
+	- Prise en compte du bouton Enter et F1  uniquement sur la fenêtre principale
+	- Ajout du bouton PB de scintillement écran 
+
+*********
+V 3.0.0.14
+*********
+15/05/2024
+
+	- Ajout d'un bouton permettant la mise à jours des applications 
+	- Ajout de la documentation pour la mise à jour des applications.
+
+*********
+V 3.0.0.13
+*********
+07/05/2024
+
+	- Correction de la réalimentation du comboBox DNS suite à une validation
+
+*********
+V 3.0.0.12
+*********
+07/05/2024
+	
+	- Ajout du bouton réparation fichier systèmes via DISM dans l'onglet Gestion PC
+	- Modification de la documentation Info PC
+	- Correction d'un pb d'afffichage après une réparation WSUS
+
+*********
+V 3.0.0.11
+*********
+18/04/2024
+	
+	- Modification de la documentation gestion du sur l'AD suite à mise à jour du module en 1.0.8 permettant le transfert des groupes entre ordinateurs
+	- Correction d'un bug sur le bouton de vérification de la connexion du PC
+
+*********
+V 3.0.0.10
+*********
+15/04/2024
+	
+	- Modification de la documentation gestion des utilisateurs AD suite à mise à jour du module en 1.0.4
+	- Ajout du lien Hotline DSIAN
+	- Ajout de la DLL user.dll
+
+*********
+V 3.0.0.9
+*********
+11/04/2024
+	
+	- Intégration du bouton dernière ouverture de session Utilisateur dans la gestion utilisateur AD
+	- Validation de la vérification de connexion par la touche Entrée
+
+
+*********
+V 3.0.0.8
+*********
+11/04/2024
+	
+	- Suppression du CE Marmande dans la liste des sites distants
+	- Ajout d'un log pour le suivi des recherches d'écrans
+	- Ajout d'un bouton pour retrouver les ecrans sur le parc d'après leur numéro de série
+
+*********
+V 3.0.0.7
+*********
+05/04/2024
+	
+	- correction d'une anomalie sur le controle GPO
+	- Mise à jour Gestion des PC sur l'AD an 1.0.0.6 afin de voir et de réactiver un PC
+	- Mise à jour de la doc Gestion des PC sur l'AD
+
+*********
+V 3.0.0.6
+*********
+02/04/2024
+	
+	- Ajout de logs sur le controle GPO
+	- Controle et suppression du fichier de rapport GPO
+	- Ajout de log sur saisie Opale
+	- Copie des S/N et Opale autorisées depuis infosPC
+
+*********
+V 3.0.0.5
+*********
+29/03/2024
+	
+	- Ajout d'une rubrique pour retrouver l'IP d'un PC dans la docs résolution des PBs
+	- Modification de l'icone fermer de la DLL 
+	- Ajout sur le bouton de recherche du N° de série et du code Opale
+	- Mise à jour de la documentation de présentation
+
+*********
+V 3.0.0.4
+*********
+20/03/2024
+	
+	- Modification du controle des sauvegardes suite au changement de dossier des Nas 100 et 101
+
+*********
+V 3.0.0.3
+*********
+20/03/2024
+	
+	- Ajout du bouton applis installées
+	- Ajout de la documentations applis Installées
+	- déploiement des icones via DLL
+
+*********
+V 3.0.0.2
+*********
+18/03/2024
+	
+	- Ajout de l'utilitaire scan réseau dans l'onglet Gestion Divers
+	- Modification du rapatriement des fichiers de conf via filecopy au lieu de fileInstall
+	- Mise à jour de la doc InfoPC suite à l'ajout de la taille de la partition C
+	- Modification de la méthode d'ouverture du SSI
+	- Ajout d'un bouton d'analyse de l'application des GPOs
+	- Création de la doc d'analyse du résultat des GPOs
+
+*********
+V 3.0.0.1
+*********
+11/03/2024
+	
+	- Déplacement de l'aide infoPC dans le menu "onglet Gestion PC"
+	- Mise à jour de la documentation de présentation avec la capture de l'onglet Gestion du PC
+	- Mise à jour de la documentation "Résolutions des PBs"
+	- Réinitialisation des listes déroulantes "Alimentation", "DNS", "WSUS" et "Processus" lors du clic sur le bouton de validation
+	- Ajout d'infobulle sur certains boutons
+
+*********
+V 3.0.0.0
+*********
+08/03/2024
+	
+	- Refonte de l'onglet Gestion du PC
+
+*********
+V 2.5.0.10
+*********
+07/03/2024
+	
+	- Ajout d'un bouton pour forcer les enregistrements DNS d'un PC distant
+	- Création d'une documentation d'aide à la résolution des problèmes
+		* Problème de mise à jour de DNS d'un poste
+	- Mise à jour de la documentation de présentation
+
+*********
+V 2.5.0.9
+*********
+06/03/2024
+	
+	- Ouverture de la fiche SSI Matériel du PC sélectionné
+
+*********
+V 2.5.0.8
+*********
+06/03/2024
+	
+	- Ajout de log dans le suivi de l'application
+	- Modification du message en cas d'utilisation non autorisées de l'application
+	- Ouverture de la fiche SSI Ordinateur du PC sélectionné
+
+*********
+V 2.5.0.7
+*********
+23/02/2024
+	
+	- Démarrage 'Admin Locaux PC' en Admtech suite à la saisie du mot de passe
+
+
+*********
+V 2.5.0.6
+*********
+21/02/2024
+	
+	- Correction du bug de controle des sauvegarde des PC de Dolet et Verdun
+	- Mise à jour de la doc connection réseau 
+
+
+*********
+V 2.5.0.5
+*********
+20/02/2024
+	
+	- Ajout de logs de suivi
+	- Mise à jour de la doc infoPC
+	- Mise à jour du controle de connectivité réseau avec l'ajout du nombre de switch sur les sites
+	- Suivi du cryptage et décryptage des fichiers de conf
+
+*********
+V 2.5.0.4
+*********
+20/02/2024
+	
+	- corrections mineures de bug de la v2.5.0.3
+
+*********
+V 2.5.0.3
+*********
+20/02/2024
+	
+	- création d'un dossier conf pour centralisation des fichiers de configuration
+	- Ajout du lien vers les Docs visios
+	- Correction de la saisie Opale (récupération du numéro en place)
+	- Ajout du nas dans le fichier param.flq
+
+*********
+V 2.5.0.2
+*********
+15/02/2024
+	
+	- Ajout des liens pour le suivi des tickets Orange
+	- Réorganisation des menus
+	- Centralisation des fichiers de conf
+
+*********
+V 2.5.0.1
+*********
+12/02/2024
+
+	- Correction de la connexion aux NAS-100 et 101
+	- Correction du controle de connectivité réseau
+
+*********
+V 2.5.0.0
+*********
+09/02/2024
+
+	- Mise à jour de la documentation InfoPC
+	- Cryptage des fichiers de configuration
+	- Ajout du lien vers Orange Business
+
+*********
+V 2.4.0.3
+*********
+06/02/2024
+		
+	- Modification de la méthode de récupération du numéro Opale 
+	- Changement d'extension des fichiers ini en Flq
+
+*********
+V 2.4.0.2
+*********
+05/02/2024
+	
+	- Déplacement des sous applicatifs pour alléger outils admins
+
+*********
+V 2.4.0.1
+*********
+02/02/2024
+	
+	- Mise en place d'un fichier version.ini
+	- Optimisation des mises à jours et du démarrage
+		- Ajout de la version dans la base de registre et mise à jour uniquement si la version est différente
+		- Copie des images et logos uniquement s'ils ne sont pas présents
+	- Optimisation des mises à jours des sous-applications par comparaison de versions inscrites en base de registre et attendues dans le fichier version.ini
+	
+**********
+V 2.4.0.0
+**********
+31/01/2024
+
+	- Réorganisation du menu Documentations Diverses 
+		- Ajout de sous menu
+		- Ajout de la documentation de la salle Boudon
+	- Ajout du menu ?
+		- Création de la fiche de suivi des mises à jours
+	- Ajout dans le fichier ini du nom du PC pour le transférer dans les sous applications	
+	- Ajout de la sauvegarde et restauration des connexions wifi via des fichiers cryptés	
